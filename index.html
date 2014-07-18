@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smooth Following Header</title>
+  <link rel="stylesheet" type="text/css" href="http:////cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" />
+  <link rel="stylesheet" type="text/css" href="smooth_following_header.css" />
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="smooth_following_header.js"></script>
+</head>
+<body>
+<div id="header" class="smooth-following-header smooth-following-header-fixed">this is header.</div>
+<div class="container">content</div>
+<script type="text/javascript">
+  $(function(){
+    var sfh = new SmoothFollowingHeader({ $header: $('#header') });
+  });
+</script>
+</body>
+</html>
